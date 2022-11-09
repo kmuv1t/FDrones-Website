@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:ital,font-size=50px,wght@0,700;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --font-body: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --bg-default: #111;
+    --bg-destak: #2d2d2d;
+    --font-color: #fff;
+    --font-hlight: rgb(0, 240, 255);
+    font-size: 10px;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1.6rem;
+    color: var(--font-color);
+    background-color: var(--bg-default);
+}
+
+a {
+    color: var(--font-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.barra:hover {
+    transition: .3s ease-in-out;
+    color: var(--font-hlight);
+}
+
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    background-color: var(--bg-destak);
+}
+
+header span {
+    color: var(--font-hlight);
+}
+
+header h1 {
+    color: var(--font-hlight);
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+nav li:first-child {
+    padding-left: 3rem;
+}
+
+nav li:last-child {
+    flex-grow: 1;
+    text-align: end;
+    padding-right: 3rem;
+}
+
+.hero {
+    padding-top: 60px;
+    height: 20rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    height: 120%;
+    width: 100%;
+    background-image: url("../images/bg.png");
+    background-position-y: -200px;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    filter: opacity(.5);
+    box-shadow: inset 0 -100px 100px var(--bg-default);
+}
+
+.entrega {
+    position: relative;
+    display: flex;
+    text-align: left;
+    padding: 3rem 10rem;
+}
+
+.icone {
+    color: black;
+    vertical-align: -7px;
+    padding-right: 10px;
+}
+
+#buttons {
+    text-align: left;
+    padding-bottom: 3rem;
+}
+
+.movie {
+    border-radius: 20px;
+    float: left;
+    margin: 0 50px 0 0;
+    width: 25rem;
+}
+
+.sinopse {
+    font-family: var(--font-body);
+    text-align: left;
+}
+
+.info {
+    padding-top: 40px;
+    padding-left: 5rem;
+    position: relative;
+}
+
+.poster {
+    padding-top: 60px;
+    padding-bottom: 20rem;
+    height: 25rem;
+    position: relative;
+}
+
+.poster::before {
+    content: '';
+    height: 120%;
+    width: 100%;
+    background-image: url("https://www.hausdrone.com.br/wp-content/uploads/2021/01/dji-mavic-mini-dji-mini-2.jpg");
+    background-position-y: -75px;
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    filter: opacity(.5);
+    box-shadow: inset 0 -100px 100px var(--bg-default);
+}
+
+.hero p {
+    font-weight: 700;
+    font-size: 3.6rem;
+    text-shadow: 0px 4px 4px #000000;
+    padding: 3rem 2rem;
+}
+
+h2 {
+    border-left: 4px solid var(--font-hlight);
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.titulo {
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.secao-drones {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secao-locais {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secao-alunos {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.pad {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.card2 {
+    float: right;
+    flex-direction: column;
+    width: 225px;
+    background-color: var(--bg-destak);
+    text-align: left;
+    border-radius: 5px;
+    margin: 3rem;
+    padding-bottom: 29px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    background-color: var(--bg-destak);
+    text-align: center;
+    margin: 2rem;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.card .preco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+.nome {
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.rm {
+    padding-top: 10px;
+    color: var(--font-hlight);
+}
+
+.ator {
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.personagem {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--font-hlight);
+}
+
+.tit {
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.desc {
+    padding-bottom: 10px;
+    color: grey
+}
+
+.sala {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dolar {
+    color: rgb(0, 255, 64);
+    padding-bottom: 5%;
+}
+
+.botao {
+    background-color: var(--font-hlight);
+    padding: 0.6rem 1.5rem ;
+    border-radius: 15px;
+    margin: 1rem 2rem;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.botao:hover {
+    box-shadow: 0 0 15px var(--font-hlight);
+}
+
+
+h1 {
+    text-transform: uppercase;
+}
